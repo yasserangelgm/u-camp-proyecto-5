@@ -1,12 +1,15 @@
 import './App.css';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home.page';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>React App Test</h1>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/u-camp-proyecto-5/" element={<Home />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
